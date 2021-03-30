@@ -1,8 +1,9 @@
-angular.module('app').factory('ConfigService', [function() {
+angular.module("app").factory("ConfigService", [
+    function () {
+        var service = {};
 
-    var service = {};
+        service.apiBase = "https://quiz-api-lm.qaalabs.com/";
 
-    service.apiBase = 'http://localhost:8001/';
-
-    return service;
-}]);
+        return service;
+    },
+]);
